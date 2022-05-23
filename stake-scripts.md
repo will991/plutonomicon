@@ -244,7 +244,7 @@ stakeValidator r (ScriptContext _ purpose) =
       -> -- credential registration
     (Certifying (DCertDelegDelegate ownCredential poolId) 
       -> -- staking pool delegation
-    (Certifying (DCertDeRegKey ownCredential)) 
+    (Certifying (DCertDelegDeRegKey ownCredential)) 
       -> -- credential de-registration
     _ -> -- etc
 ```
